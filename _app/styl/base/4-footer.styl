@@ -1,47 +1,109 @@
-footer
-	padding 20px 0
-	text-align: center
-	background-color: rgba(#eee,.7)
-	font-size: 14px
-	h5
-		font-size: 20px;
-		margin 0
-		font-family: 
-		font-weight: bold
-	p
-		line-height: 1.3
-.conditions
-	color #000
-	text-decoration: underline
+#last
+	padding 90px 0
+	background-color:#182352
+	background-image: url(../img/backs/last.png)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	text-align center
+	color: #fff
+	margin-top: 90px
+	@media screen and (max-width 991px)
+		padding 70px 0
+		margin-top: 70px
+	@media screen and (max-width 560px)
+		margin-top: 50px
+		padding 50px 0
+	@media screen and (max-width 385px)
+		margin-top: 40px
+		padding 40px 0
+.last-title
+	font-family: GM
+	font-size: 35px
+	font-weight: 900
+	text-transform uppercase
+	@media screen and (min-width 2295px)
+		br
+			display none
+	@media screen and (max-width 1199px)
+		br
+			display none
+	@media screen and (max-width 991px)
+		font-size: 32px
+	@media screen and (max-width 560px)
+		font-size: 28px
+	@media screen and (max-width 385px)
+		font-size: 24px
+.footer
+	&-title
+		font-size: 20px
+		font-weight: 900
+		margin: 90px 0 25px
+		text-transform uppercase
+		// @media screen and (max-width 991px)
+		@media screen and (max-width 560px)
+			margin 50px 0 20px
+			br
+				display none
+		@media screen and (max-width 385px)
+			margin 30px 0 15px
+			font-size: 18px
+	&-text
+		font-family: OS
+		font-size: 16px
+		margin-bottom: 5px
+		a
+			color #fff
+			display inline-block
+			&:focus
+				color #fff
+			&:hover
+				color #fff
+				text-decoration underline
+		&:last-of-type
+			margin-top: 50px
+			@media screen and (max-width 560px)
+				margin-top: 30px
+.soc-links
+	margin: 40px 0 70px
+	@media screen and (max-width 991px)
+		margin 40px 0
+	@media screen and (max-width 560px)
+		margin-bottom: 30px
+.soc-link
+	width 50px
+	height: 50px
+	border-radius: 50px
+	text-align center
+	margin 0 5px
+	display inline-block
+	background-image: url(../img/icons/soc-links.png)
+	background-repeat: no-repeat
+	text-decoration none
+	transition: all .3s ease
 	&:focus
-		color #000
-		text-decoration: underline
+		text-decoration none
 	&:hover
-		color: #000
-		text-decoration: none
-.soc-buttons
-	width 100%
-	margin: 0 auto
-	a
-		display: inline-block
-		margin: 15px 7px 10px
-		width: 29px;
-		height: 29px;
-		background-image url(../img/icons/soc-buttons.png)
-		background-repeat no-repeat
-		transition all .3s ease
-		&:hover
-			opacity .9
-			transform: translateY(-3px)
-		&:nth-of-type(1)
-			background-position: 0 0
-		&:nth-of-type(2)
-			background-position: -29px 0
-		&:nth-of-type(3)
-			background-position: -58px 0
-		&:nth-of-type(4)
-			background-position: -87px 0
-		&:nth-of-type(5)
-			background-position: -116px 0
-		&:nth-of-type(6)
-			background-position: -145px 0
+		transform: translateY(-4px)
+	&-vk
+		background-position: 0 0
+		box-shadow: 0px 1px 25.23px 3.77px rgba(77, 118, 161, 0.79);
+		background-color #4d76a1
+	&-yt
+		background-position: -50px 0
+		box-shadow: 0px 1px 25.23px 3.77px rgba(255, 0, 0, 0.79);
+		background-color #ff0000
+	&-insta
+		background-position: -100px 0
+		box-shadow: 0px 1px 25.23px 3.77px rgba(240, 0, 117, 0.79);
+		background-color #f00075
+	&-tg
+		background-position: -150px 0
+		box-shadow: 0px 1px 25.23px 3.77px rgba(3, 155, 229, 0.79);
+		background-color #039be5
+	&-fb
+		background-position: -200px 0
+		box-shadow: 0px 1px 25.23px 3.77px rgba(59, 89, 152, 0.79);
+		background-color #3b5998
+	@media screen and (max-width 560px)
+		margin 0 1px
