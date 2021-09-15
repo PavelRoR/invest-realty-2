@@ -23,11 +23,11 @@ mixin b(img, cl, clb, href='', p, target, id)
 		a.button(class=clb href=href target=target id=id)
 			if img
 				+imgs('', path+'img/icons/tg-white.png', 'Telegram')
-			!='&nbsp;'+p
+			span!=' '+p
 mixin gt(cl, h3,sp)
-	h3.general-title=h3
+	h3.general-title!=h3
 		if sp
-			span=sp
+			span!=sp
 mixin imgs(cl, src, alt)
 	img(class=cl src=path+src alt=alt)
 
@@ -45,7 +45,7 @@ html(lang="ru")
 			include pug/main/4-projects
 			include pug/main/5-who
 			include pug/main/6-why
-		include pug/base/2-footer
+			include pug/base/2-footer
 		include pug/base/3-scripts
 		//- include pug/scripts/chat
 		//- include pug/scripts/body_bottom_scripts

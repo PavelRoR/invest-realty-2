@@ -1,16 +1,17 @@
 mixin clch(cl, n, src, sp, p)
 	.col-md-3
-		.cliche(class="cliche-"+n+' '+cl)
-			h4.cliche-title='0'+n
-			+imgs('cliche-img', 'img/images/cliche-'+n+'.png', sp)
-			p.cliche-text
-				span!=sp
-				=p
+		.cliche-wrapper
+			.cliche(class="cliche-"+n+' '+cl)
+				h4.cliche-title='0'+n
+				+imgs('cliche-img', 'img/images/cliche-'+n+'.png', sp)
+				p.cliche-text
+					span!=sp
+					=p
 
 
 section#cliches
 	.container
-		h3.general-title
+		h3.general-title.general-title-cliches
 			span “Разбиваем” стереотипы про 
 			| покупку жилья в России!
 		.row
