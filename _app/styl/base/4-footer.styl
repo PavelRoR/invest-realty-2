@@ -13,7 +13,7 @@ footer
 	@media screen and (max-width 560px)
 		margin: 35px 0
 		padding 50px 0
-	@media screen and (max-width 385px)
+	@media screen and (max-width 386px)
 		margin: 20px 0
 		padding 40px 0
 .footer-title
@@ -30,7 +30,7 @@ footer
 		font-size: 32px
 	@media screen and (max-width 560px)
 		font-size: 28px
-	@media screen and (max-width 385px)
+	@media screen and (max-width 386px)
 		font-size: 24px
 .footer
 	&-subtitle
@@ -38,11 +38,18 @@ footer
 		font-weight: bold
 		color #d2c2a0
 		margin: 40px 0
+		@media screen and (max-width 991px)
+			font-size: 22px
+			margin 30px 0
+		@media screen and (max-width 560px)
+			font-size: 18px
 	&-text
 		font-family: OS
 		font-size: 16px
 		&:last-of-type
 			margin-top: 50px
+			@media screen and (max-width 560px)
+				margin-top: 30px
 		a
 			color #fff
 			text-decoration none
@@ -69,6 +76,10 @@ footer
 	background-repeat: no-repeat
 	text-decoration none
 	transition: all .3s ease
+	@media screen and (max-width 386px)
+		width 36px
+		height: 36px
+		background-size cover
 	&:focus
 		text-decoration none
 	&:hover
@@ -81,17 +92,25 @@ footer
 		background-position: -50px 0
 		box-shadow: 0px 1px 25.23px 3.77px rgba(255, 0, 0, 0.79);
 		background-color #ff0000
+		@media screen and (max-width 386px)
+			background-position: -35px 0
 	&-insta
 		background-position: -100px 0
 		box-shadow: 0px 1px 25.23px 3.77px rgba(240, 0, 117, 0.79);
 		background-color #f00075
+		@media screen and (max-width 386px)
+			background-position: -72px 0
 	&-tg
 		background-position: -150px 0
 		box-shadow: 0px 1px 25.23px 3.77px rgba(3, 155, 229, 0.79);
 		background-color #039be5
+		@media screen and (max-width 386px)
+			background-position: -109px 0
 	&-fb
 		background-position: -200px 0
 		box-shadow: 0px 1px 25.23px 3.77px rgba(59, 89, 152, 0.79);
 		background-color #3b5998
+		@media screen and (max-width 386px)
+			background-position: -144px 0
 	@media screen and (max-width 560px)
 		margin 0 1px

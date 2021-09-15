@@ -4,13 +4,16 @@
 	width 100%
 	max-width 524px
 	margin 0 auto 40px
+	@media screen and (max-width 560px)
+		margin-bottom: 25px
 	&-imgs
 		display flex
 		flex-wrap: wrap
 		align-items: center
 		justify-content: space-between
 		img
-			margin-bottom: 4px
+			margin-bottom: 10px
+			width 49%
 	&-info
 		&-wrapper
 			border-radius: 8px
@@ -25,6 +28,12 @@
 		position relative
 		margin-top: 3px
 		min-height 433px
+		@media screen and (max-width 1199px)
+			min-height 460px
+		@media screen and (max-width 991px)
+			min-height 1px
+		@media screen and (max-width 386px)
+			padding 35px 20px 30px
 		&-number
 			position absolute
 			font-family: Ab
@@ -34,13 +43,19 @@
 			opacity .3
 			top 0
 			left 10px
+			@media screen and (max-width 386px)
+				font-size: 26px
 		&-title
 			font-size: 24px
 			font-weight: bold
 			color #d2c2a0
+			@media screen and (max-width 386px)
+				font-size: 22px
 		&-text
 			font-size: 16px
 			margin 25px 0 40px
+			@media screen and (max-width 560px)
+				margin 20px 0 30px
 		&-list
 			margin-bottom: 30px
 			li
@@ -48,7 +63,10 @@
 				font-size: 16px
 				span
 					font-weight: bold
+					display inline-block
 .button-project-info
 	position absolute
 	bottom: 35px
 	left 20px
+	@media screen and (max-width 991px)
+		position: static
